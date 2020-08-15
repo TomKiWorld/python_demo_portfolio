@@ -1,10 +1,7 @@
-import sys
 from flask import Flask, render_template, request, redirect
-sys.path.append('./Database')
-sys.path.append('./modules')
-from projects_list import projects_list
-from projects import carousel_chunks, get_project_by_slug
-from contact import write_to_file, write_contact_info
+from Database.projects_list import projects_list
+from modules.projects import carousel_chunks, get_project_by_slug
+from modules.contact import write_to_file, write_contact_info
 
 carousel_list = list(carousel_chunks(projects_list, 3))
 app = Flask(__name__)

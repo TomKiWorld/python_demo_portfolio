@@ -15,11 +15,6 @@ The server will run on port 5000 `http://127.0.0.1:5000/`
 
 ## Libraries 
 
-### [sys](https://docs.python.org/3/library/sys.html)
-To add modules and database to server path
-> This module provides access to some variables used or maintained by the interpreter and to functions that 
-> interact strongly with the interpreter. It is always available.
-
 ### [csv](https://docs.python.org/3/library/csv.html)
 To save contact information to a csv file instead of a databse
 > The csv module implements classes to read and write tabular data in CSV format. It allows programmers to say, 

@@ -1,3 +1,4 @@
+import os
 import csv
 from datetime import date
 
@@ -10,6 +11,8 @@ html_escape_table = {
     '<': '&lt;',
 }
 
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+
 
 def html_escape(text):
     ''' Produce entities within text. '''
@@ -17,7 +20,8 @@ def html_escape(text):
 
 
 def write_to_file(data):
-    with open('./Database/database.txt', mode='a') as database:
+    txt_db = os.path.join(THIS_FOLDER, 'database.txt')
+    with open(txt_db, mode='a') as database:
         today = date.today().strftime('%B %d, %Y - %H:%M:%S')
         email = html_escape(data['email'])
         subject = html_escape(data['subject'])
@@ -26,7 +30,8 @@ def write_to_file(data):
 
 
 def write_contact_info(data):
-    with open('./Database/database.csv', mode='a', newline='') as csvfile:
+    csv_db = os.path.join(THIS_FOLDER, 'database.csv')
+    with open(csv_db, mode='a', newline='') as csvfile:
         today = date.today().strftime('%B %d, %Y%H:%M:%S')
         email = html_escape(data['email'])
         subject = html_escape(data['subject'])

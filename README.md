@@ -1,4 +1,4 @@
-# Send sms
+# Python demo portfilo
 
 ## Usage 
 A demo portfolio website using python for the backend.

@@ -1,0 +1,15 @@
+Contact information:
+--------------------
+
+August 13, 2020 - 00:00:00:
+From: tester@gmail.com
+Subject: testing
+Message: This is an example a sent the message being saved to the database
+----------------
+
+August 13, 2020 - 00:00:00:
+From: tester@gmail.com
+Subject: testing
+Message: This is an example a sent the message with an attempt to write a script:
+&lt;script&gt;alert(&apos;hi&apos;)&lt;/script&gt;
+----------------

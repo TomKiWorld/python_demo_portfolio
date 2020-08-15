@@ -1,0 +1,21 @@
+{% macro portfolio_card(
+    name,
+    slug,
+    image,
+    index,
+    description,
+    count
+    ) -%}
+{% set image_url="assets/images/" + image %}
+    <div class="col-sm-4">
+        <a href="/portfolio/{{ slug }}" title="{{ name }}" class="black-image-project-hover">
+            <img src="{{ url_for('static', filename=image_url) }}" alt="{{ name }} preview" class="img-responsive">
+        </a>
+        <div class="card-container card-container-lg">
+            <h4>{{ index }}/ {{ count }}</h4>
+            <h3>{{ name }}</h3>
+            <p class="project-excerpt">{{ description }}</p>
+            <a href="/portfolio/{{ slug }}" title="{{ name }}" class="btn btn-default">Discover</a>
+        </div>
+    </div>
+{%- endmacro %}

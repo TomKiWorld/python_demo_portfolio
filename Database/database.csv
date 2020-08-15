@@ -1,0 +1,5 @@
+date, email, subject, message
+-----------------------------
+"August 13, 202000:00:00",tester@gmail.com,testing,This is an example a sent the message being saved to the database
+"August 13, 202000:00:00",tester@gmail.com,testing,"This is an example a sent the message with an attempt to write a script:
+&lt;script&gt;alert(&apos;hi&apos;)&lt;/script&gt;"

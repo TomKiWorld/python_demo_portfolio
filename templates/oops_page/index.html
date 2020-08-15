@@ -1,0 +1,29 @@
+{% extends "./layout.html" %}
+{% import "./components/address_container.html" as address_container with context %}
+{% import "./components/site_footer.html" as site_footer with context %}
+{% block title %}Contact{% endblock %}
+{% block navbar_class %}navbar-default{% endblock %}
+{% block content %}
+<div class="section-container">
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center">
+            <h1 class="h2">Oops</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-7 text-center">
+              <p>It seems somthing went wrong! Please try again</p>
+            </div>
+              {{ address_container }}
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block footer %}
+{{ site_footer }}
+{% endblock %}

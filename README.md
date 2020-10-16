@@ -1,13 +1,17 @@
 # Python demo portfilo
 
+## Preview
+http://tomkiworld.pythonanywhere.com/
+
 ## Usage 
 A demo portfolio website using python for the backend.
 For the purpose of practicing Pyhton I used a template from [mashup](http://www.mashup-template.com/templates.html).
 The template is called [Univer](http://www.mashup-template.com/preview.html?template=univers).
-From which I used the html, js and css to generate templates and macros with Jinja*.
+From which I used the html, js and css to generate templates and macros with [Jinja](https://jinja.palletsprojects.com/en/2.11.x/).
 
-One a visitor sends a message via the contact form, a line with contact information is add to both database.txt and database.csv in the Database folder.
+To replace a Database for this exercise. Once a visitor sends a message via the contact form, a line with contact information is add to both database.txt and database.csv in the Database folder.
 
+## Local setup
 After cloning the project, run `pip3 install -r requirements.txt` to set up the virtual environment locally.
 
 To start the server execute `flask run` from root directory and `Ctrl + C` to quit.
